@@ -1,5 +1,5 @@
 
-const { compare } = require("bcrypt");
+// const { compare } = require("bcrypt");
 const User=require("../user")
 const test=(req,res)=>{
     res.json("test is working")
