@@ -4,10 +4,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "mono.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx nodemon index.js",
+    "start": "npx nodemon mono.js",
     "build": "npm install"
   },
   "author": "",
