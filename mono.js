@@ -29,7 +29,7 @@ const app = express();
 
 // Enable CORS middleware before your routes
 app.use(cors({
-    origin: 'https://login-0i7x.onrender.com',
+    // origin: 'https://login-0i7x.onrender.com',
     credentials: true,
 }));
 
