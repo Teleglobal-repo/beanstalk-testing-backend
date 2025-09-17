@@ -24,7 +24,7 @@ const dotenv = require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const cookieParser = require('cookie-parser');
-
+const PORT = process.env.PORT || 6000;
 const app = express();
 
 // Enable CORS middleware before your routes
@@ -39,8 +39,8 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use("/", require("./routs/authRouts"));
 
-app.listen(8000, () => {
-    console.log("Server is running");
+app.listen(PORT, () => {
+    console.log("Server is running in port 6000");
 });
 
 mongoose.connect(process.env.MONGO_URL)
